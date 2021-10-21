@@ -23,7 +23,7 @@ app.use('/api', require('./routes/clientes'));
 app.use('/api', require('./routes/ventas'));
 app.use('/api', require('./routes/estadoVenta'));
 
-app.listen(port, ()=>{
+app.listen(process.env.PORT || port, ()=>{
 
     console.log(`La API está corriendo en el puerto http://localhost:${port}`);
     sequelize.sync({force: false}).then(()=>{
