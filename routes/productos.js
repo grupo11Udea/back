@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Producto = require('../database/models/Producto');
+const Producto = require('../database/models/producto');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
