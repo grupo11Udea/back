@@ -2,7 +2,7 @@ const {Model, DataTypes} = require("sequelize");
 const sequelize = require('../db');
 const DetalleVenta = require("./DetalleVenta");
 const cliente = require("./cliente");
-const estadoVenta = require("./EstadoVenta");
+const estadoVenta = require("./estadoVenta");
 const usuario = require("./usuario");
 
 class venta extends Model{}
