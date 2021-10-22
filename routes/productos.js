@@ -35,7 +35,7 @@ router.get('/productos/getByName/',(req, res)=>{
     console.log(req.query.nombre)
     console.log(req.query.id)
     Producto.findAll({
-        attributes: ['id','nombre','descripcion' ,'valor_unitario', 'estado','usuario' ],
+        attributes: ['id','nombre','descripcion' ,'valor_unitario', 'estado','id_usuario' ],
         where: {
            [Op.and]:[{nombre: {
                 [Op.like]: `%${req.query.nombre}%`}},{id: {
